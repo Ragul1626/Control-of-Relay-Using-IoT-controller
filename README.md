@@ -31,17 +31,26 @@ Relay is an electromagnetic switch, which is controlled by small current, and us
 
 ![image](https://github.com/anishkumar-Embedded/Control-of-Relay-Using-IoT-controller/assets/71547910/7883ec9f-4adc-4033-9acf-f16809fd73eb)
 
-When there is no voltage applied to the coil, COM (common) is connected to NC (normally closed contact). When there is some voltage applied to the coil, the electromagnetic field produced, which attracts the Armature (lever connected to spring), and COM and NO (normally open contact) gets connected, which allow a larger current to flow. Relays are available in many ratings, here we used 6V operating voltage relay, which allows 7A-250VAC current to flow.The relay is always configured by using a small Driver circuit which consists a Transistor, Diode and a resistor. Transistor is used to amplify the current so that full current (from the DC source – 9v battery) can flow through a coil to fully energies it. The resistor is used to provide biasing to the transistor. And Diode is used to prevent reverse current flow, when the transistor is switched OFF. Every Inductor coil produces equal and opposite EMF when switched OFF suddenly, this may cause permanent damage to components, so Diode must be used to prevent reverse current.Here to turn on the Relay with Arduino we just need to make that Arduino Pin High (A0 in our case) where Relay module is connected
+When there is no voltage applied to the coil, COM (common) is connected to NC (normally closed contact). When there is some voltage applied to the coil, the electromagnetic field produced, which attracts the Armature (lever connected to spring), and COM and NO (normally open contact) gets connected, which allow a larger current to flow. Relays are available in many ratings, here we used 6V operating voltage relay, which allows 7A-250VAC current to flow.The relay is always configured by using a small Driver circuit which consists a ![Screenshot 2025-01-08 062137](https://github.com/user-attachments/assets/0b1f67fa-f9d9-4154-8b18-f127beffcaa2)
+Transistor, Diode and a resistor. Transistor is used to amplify the current so that full current (from the DC source – 9v battery) can flow through a coil to fully energies it. The resistor is used to provide biasing to the transistor. And Diode is used to prevent reverse current flow, when the transistor is switched OFF. Every Inductor coil produces equal and opposite EMF when switched OFF suddenly, this may cause permanent damage to components, so Diode must be used to prevent reverse current.Here to turn on the Relay with Arduino we just need to make that Arduino Pin High (A0 in our case) where Relay module is connected
 
 ![image](https://github.com/anishkumar-Embedded/Control-of-Relay-Using-IoT-controller/assets/71547910/208c5221-8e60-4880-a5c8-cae317d7f211)
 
 In this Arduino  Relay Control Circuit we have used Arduino to control the relay via a BC547 transistor. We have connected transistor base to Arduino pin A0 through a 1k resistor. An AC bulb is used for demonstration.Working is simple, we need to make the RELAY Pin (PIN A0) high to make the Relay module ON and make the RELAY pin low to turn off the Relay Module. The AC light will also turn on and off according to Relay.
 
 ## PROGRAM:
+![Screenshot 2025-01-08 062028](https://github.com/user-attachments/assets/5ff36551-f2b3-4be8-85be-9214aeb5aa74)
 
 ## CIRCUIT DIAGRAM:
+![Screenshot 2025-01-08 062053](https://github.com/user-attachments/assets/c555c0f3-8dd8-4f9f-b1c0-88647d777c8f)
 
 ## OUTPUT:
+ON
+![Screenshot 2025-01-08 062113](https://github.com/user-attachments/assets/ec1770f3-c097-4e91-86f6-91b9cda70ab5)
+
+OFF
+![Screenshot 2025-01-08 062137](https://github.com/user-attachments/assets/fb8c800e-6df3-4a85-9362-1d5bf58725ac)
+
 
 ## RESULT:
 
